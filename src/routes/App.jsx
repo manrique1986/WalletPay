@@ -12,17 +12,15 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/money" element={<YourMoney />} />
         <Route index element={<LandingPage />} />
         <Route path="*" element={<ErrorPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
         <Route element={<UserRouteProtected />}>
           <Route path="/home" element={<Home />} />
-         
         </Route>
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/money" element={<YourMoney />} />
-       
       </Routes>
     </BrowserRouter>
   );

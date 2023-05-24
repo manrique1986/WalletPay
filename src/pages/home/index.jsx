@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div className='bg-[#10224D] h-16 flex items-center text-white justify-between pl-6 pr-[26px]'>
-        <AiOutlineMenu className='text-2xl'/>
+       <Link to="/profile"> <AiOutlineMenu className='text-2xl'/></Link>
         <p className='font-semibold'>Inicio</p>
         <div className='flex gap-[26px]'>
           <AiOutlineQuestionCircle className='w-6 h-6' />
@@ -45,7 +45,7 @@ const Home = () => {
           </div>
           <hr className='w-[90%] m-auto border-[#33333366]'/>
           <div className='flex gap-2 items-center justify-between font-semibold  text-colorButton text-[12px] pl-[21px] pr-[21px]'> {/*border-t-2 border-borderHome */}
-            <button className='bg-bgButton p-1 rounded-[4px] mt-[10px] w-full'>Ingresar dinero</button>
+         <button className='bg-bgButton p-1 rounded-[4px] mt-[10px] w-full'> <Link to="/money">Ingresar dinero</Link>  </button>
             <button className='bg-bgButton p-1 rounded-[4px] mt-[10px] w-full'>Transferir dinero</button>
           </div>
         </div>
