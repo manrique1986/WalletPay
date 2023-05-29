@@ -146,7 +146,7 @@ const FormRegister = ({ handleClick }) => {
         </Link>
       </div>
     </form>
- 
+   
   );
 };
 
