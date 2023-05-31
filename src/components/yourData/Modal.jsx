@@ -1,4 +1,4 @@
-import IconClose from "../../assets/IconClose.svg";
+import IconClose from "../../assets/svg/iconClose.svg";
 import { FormModal } from "./FormModal";
 
 // eslint-disable-next-line react/prop-types
