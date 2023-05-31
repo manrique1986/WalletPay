@@ -29,6 +29,12 @@ const Dashboard = ({ open, setOpen }) => {
   ];
   return (
     <section className="relative flex border- ">
+         <div
+        onClick={() => setOpen(false)}
+        className={`md:hidden fixed inset-0 max-h-screen  bg-black/50 ${
+          open ? "block" : "hidden"
+        } `}
+      ></div>
       <div
         className={`absolute min-h-screen   ${
           open ? "w-[260px] bg-[#ECEBF6]   " : " invisible"
