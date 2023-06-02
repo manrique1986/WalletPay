@@ -11,7 +11,7 @@ import YourData from "../pages/your-data";
 import QrLink from "../pages/qrlink-page";
 import AddMoney from "../pages/addmoney";
 import CardsPage from "../pages/cards-page";
-
+// import Transfer from "../components/tranfer-components/topBarTransfer";
 // import Activity from "../pages/activity/Activity";
 // import Details from "../pages/activity/Details";
 
@@ -23,7 +23,7 @@ function App() {
         <Route path="*" element={<ErrorPage />} />
         <Route path="/login" element={<LoginPage />} />
          <Route path="/qrlink" element={<QrLink />} />
-    
+         {/* <Route path="transfer" element={<Transfer />} /> */}
 
         <Route path="/register" element={<RegisterPage />} />
         <Route element={<UserRouteProtected />}>

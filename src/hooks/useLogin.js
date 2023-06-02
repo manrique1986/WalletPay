@@ -19,8 +19,8 @@ const useLogin = ({
                 onSuccess(res.data);
             })
             .catch((err) => {
-                setError(err.response.data);
-                onError(err.response.data);
+                setError(err.message);
+                onError(err.message);
             })
             .finally(() => {
                 setIsLoading(false);
@@ -31,4 +31,4 @@ const useLogin = ({
     return { data, isLoading, error, postData };
 };
 
-export default useLogin;    
+export default useLogin;
